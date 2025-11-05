@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import requests
 import os
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 HF_API_URL = "https://api-inference.huggingface.co/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
 HF_TOKEN = os.getenv("HF_TOKEN")
